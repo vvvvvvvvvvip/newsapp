@@ -1,0 +1,22 @@
+<header class="relative">
+	<div class="top-bar">
+		<div class="abs_l">
+			<a class="back" ng-click="againClick()"></a>
+		</div>
+		<div class="abs_m">搜索</div>
+	</div>
+</header>
+<div class="search_form">
+	<div class="search_content">
+		<a href=""></a>
+		<div class="arrowdown"></div>
+		<input type="search" placeholder="请输入搜索关键词">
+	</div>
+</div>
+<div class="search_text">
+	<ul>
+		<li ng-repeat="v in searchList">
+			<a href="">{{v.name}}</a>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,23 @@
+<header id="title">
+	<div class="top-bar">
+		<a class="title-text"></a>
+		<a class="title_l"></a>
+		<a class="title_search" ng-click="whenClick('search')"></a>
+		<div class="alert">
+			<div class="pop">
+				<div class="banner"></div>
+				<p>已加载好您感兴趣的头条</p>
+				<div class="download">立即打开</div>
+				<div class="close"></div>
+			</div>
+		</div>
+	</div>
+	<div class="top-meau">
+		<ul>
+			<li ng-repeat="v in meaulist" ng-show="v.state">
+				<a href="{{v.url}}">{{v.name}}</a>
+			</li>
+		</ul>
+		<div class="add" ng-click="whenClick('add')"></div>
+	</div>
+</header>

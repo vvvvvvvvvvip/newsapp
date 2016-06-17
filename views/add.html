@@ -1,0 +1,22 @@
+<header class="relative">
+	<div class="top-bar">
+		<div class="abs_l">
+			<a class="back" ng-click="againClick()"></a>
+		</div>
+		<div class="abs_m">频道管理</div>
+	</div>
+</header>
+<div class="con">
+	<div class="msg">点击删除频道</div>
+	<ul class="add_list">
+		<li ng-show="v.state" ng-repeat="v in meaulist">
+			<a href="" ng-click="v.state=!v.state">{{v.name}}</a>
+		</li>
+	</ul>
+	<div class="msg">点击添加以下频道</div>
+	<ul class="add_list">
+		<li ng-show="!v.state" ng-repeat="v in meaulist">
+			<a href="" ng-click="v.state=!v.state">{{v.name}}</a>
+		</li>
+	</ul>
+</div>
